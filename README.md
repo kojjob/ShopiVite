@@ -62,4 +62,16 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 2. show image in first column
 3. show product info in the second column
 4. show add to cart action in the second column
-5. add styles -->
+5. add styles
+
+7.Add MaterialUI Theme
+    1. create theme
+    2.  use theme provider
+    3.  add h1 and h2 styles
+    4.  set theme colors
+11. Create Application Context
+    1.  define context and reducer
+    2.  set darkMode flag
+    3.  create store provider
+    4.  use it on layout
+-->
