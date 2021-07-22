@@ -26,10 +26,40 @@ npx create-next-app --example with-tailwindcss with-tailwindcss-app
 yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment))
 
-Project
+1.Create Next App
+
+1. npx create-next-app
+2. add header, main, and footer
+
+2.Fix SSR iSSUE on MaterialUI
+
+1. add \_documents.js
+2. add code to fix styling issues
+
+3.Project
 
 1.  add data.js
 2.  add images
 3.  render products
+
+4.Add header links
+
+1.  add cart and login links
+2.  use next/links and mui.links
+3.  add css for header links
+
+5.Route Product Detail Page
+
+1. make product card linkeable
+2. creat/product/[slug] route
+3. find product based on slug
+
+6.Creat Product Detail Page
+
+1. create 3 columns
+2. show image in first column
+3. show product info in the second column
+4. show add to cart action in the second column
+5. add styles

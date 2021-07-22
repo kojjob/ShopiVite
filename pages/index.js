@@ -8,11 +8,11 @@ import {
   CardActions,
   Button,
 } from "@material-ui/core"
+import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 import Layout from "../components/Layout"
 import data from "../utils/data"
-console.log(data)
 
 function Home() {
   return (
@@ -23,16 +23,20 @@ function Home() {
           {data.products.map((product) => (
             <Grid item md={4} key={product.id}>
               <Card>
-                <CardActionArea>
-                  <CardMedia
-                    component='img'
-                    image={product.image}
-                    title={product.name}
-                  ></CardMedia>
-                  <CardContent>
-                    <Typography>{product.name}</Typography>
-                  </CardContent>
-                </CardActionArea>
+                <Link href={`/product/${product.slug}`}>
+                  <a>
+                    <CardActionArea>
+                      <CardMedia
+                        component='img'
+                        image={product.image}
+                        title={product.name}
+                      ></CardMedia>
+                      <CardContent>
+                        <Typography>{product.name}</Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </a>
+                </Link>
                 <CardActions>
                   <Typography>${product.price}</Typography>
                   <Button size='small' color='primary'>

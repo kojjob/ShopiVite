@@ -8,6 +8,13 @@ const useStyles = makeStyles({
       marginLeft: 10,
     },
   },
+  brand: {
+    color: "#ffffff",
+    fontSize: "1.5rem",
+  },
+  grow: {
+    flexGrow: 1,
+  },
   main: {
     minHeight: "80vh",
   },
@@ -15,6 +22,11 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    marginTop: "1rem",
+  },
+  section: {
+    marginTop: "1rem",
+    marginBottom: "1rem",
   },
 })
 

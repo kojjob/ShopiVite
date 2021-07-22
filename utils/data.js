@@ -3,6 +3,7 @@ const data = {
     {
       id: 1,
       name: "Free Shirt",
+      slug: "free-shirt",
       category: "Shirts",
       image: "/images/shirt1.jpg",
       price: 45,
@@ -17,6 +18,7 @@ const data = {
     {
       id: 2,
       name: "Fit Shirt",
+      slug: "fit-shirt",
       category: "Shirts",
       image: "/images/shirt2.jpg",
       price: 75,
@@ -31,6 +33,7 @@ const data = {
     {
       id: 3,
       name: "Slim Shirt",
+      slug: "slim-shirt",
       category: "Shirts",
       image: "/images/shirt3.jpg",
       price: 45,
@@ -45,6 +48,7 @@ const data = {
     {
       id: 4,
       name: "Golf Pants",
+      slug: "golf-pants",
       category: "Pants",
       image: "/images/pants1.jpg",
       price: 45,
@@ -59,6 +63,7 @@ const data = {
     {
       id: 5,
       name: "Fit Pants",
+      slug: "fit-pants",
       category: "Pant",
       image: "/images/pants2.jpg",
       price: 45,
@@ -73,6 +78,7 @@ const data = {
     {
       id: 6,
       name: "T-Shirt",
+      slug: "t-shirt",
       category: "T-Shirts",
       image: "/images/pants3.jpg",
       price: 45,
@@ -87,16 +93,18 @@ const data = {
     {
       id: 7,
       name: "Classic Bag",
+      slug: "classic-bag",
       category: "Bag",
       image: "/images/classic-bag.jpeg",
       price: 45,
       brand: "Nike",
       color: "red",
       size: "M",
-      countInStock: 9,
+      countInStock: 0,
       rating: 4.0,
       numReviews: 15,
-      description: "The bag of the season",
+      description:
+        "Our riff on the traditional music case. Originally designed to carry sheet music, this sleek modern version is an exemplary work bag. Slim and light but big enough to carry a slender laptop, your favourite jotter and anything you else you need to create perfect work-life harmony.",
     },
   ],
 }
