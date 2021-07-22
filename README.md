@@ -28,7 +28,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment))
 
-1.Create Next App
+<!-- 1.Create Next App
 
 1. npx create-next-app
 2. add header, main, and footer
@@ -62,4 +62,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 2. show image in first column
 3. show product info in the second column
 4. show add to cart action in the second column
-5. add styles
+5. add styles -->
