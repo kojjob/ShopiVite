@@ -38,8 +38,10 @@ function Home() {
                   </a>
                 </Link>
                 <CardActions>
-                  <Typography>${product.price}</Typography>
-                  <Button size='small' color='primary'>
+                  <Typography fontWeight='fontWeightBold'>
+                    ${product.price}
+                  </Typography>
+                  <Button size='small' color='primary' variant='outlined'>
                     Add to cart
                   </Button>
                 </CardActions>

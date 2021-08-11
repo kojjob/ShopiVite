@@ -74,4 +74,15 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
     2.  set darkMode flag
     3.  create store provider
     4.  use it on layout
+
+12. Connect To MongoDB
+    1.  install mongodb
+    2.  install mongoose
+    3.  define connect and disconnect
+    4.  use it in the api
+13. Create Products API
+    1.  create product model
+    2.  seed sample data
+    3.  create /api/products/index.js
+    4.  create product api
 -->

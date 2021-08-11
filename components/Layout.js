@@ -7,7 +7,7 @@ import {
   Toolbar,
   Typography,
   Container,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
   CssBaseline,
   Switch,
@@ -19,20 +19,18 @@ import Cookies from "js-cookie"
 export default function Layout({ title, description, children }) {
   const { state, dispatch } = useContext(Store)
   const { darkMode } = state
-  const theme = createMuiTheme({
+  const theme = createTheme({
     typography: {
       h1: {
         fontFamily: "'Roboto', sans-serif",
         fontSize: "1.6rem",
         fontWeight: "400",
-        // color: "rgba(0, 0, 0, 0.87)",
         margin: "1rem 0",
       },
       h2: {
         fontFamily: "'Roboto', sans-serif",
         fontSize: "1.4rem",
         fontWeight: "400",
-        // color: "rgba(0, 0, 0, 0.87)",
         margin: "1rem 0",
       },
       body1: {
@@ -42,10 +40,10 @@ export default function Layout({ title, description, children }) {
     palette: {
       type: darkMode ? "dark" : "light",
       primary: {
-        main: "#f0c00",
+        main: "#0091EA",
       },
       secondary: {
-        main: "#0876f5",
+        main: "#208080",
       },
     },
   })
@@ -83,14 +81,18 @@ export default function Layout({ title, description, children }) {
                   <Typography>Login</Typography>
                 </a>
               </Link>
-              <Switch checked={darkMode} onChange={darkModeXHandler}></Switch>
+              <Switch
+                checked={darkMode}
+                color={theme.palette.primary.main}
+                onChange={darkModeXHandler}
+              ></Switch>
             </div>
           </Toolbar>
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className={classes.footer}>
           <Typography className='mx-auto text-4xl'>
-            <h1 className='font-semibold mx-auto text-gray-600'>
+            <h1 className='font-semibold mx-auto text-gray-500'>
               All rights reserved ShopiVite
             </h1>
           </Typography>

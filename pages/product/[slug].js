@@ -93,7 +93,7 @@ const ProductDetails = () => {
                 </Grid>
               </ListItem>
               <ListItem>
-                <Button fullWidth variant='contained' color='secondary'>
+                <Button fullWidth variant='contained' color='primary'>
                   Add to cart
                 </Button>
               </ListItem>
